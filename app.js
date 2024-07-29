@@ -212,6 +212,24 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 
 Solve Exercise 13 here:
 */
+ function gymStatus() {
+    const gymTally = {
+      completed: 0,
+      incomplete: 0
+    };
+    for (const gym of this.gyms) {
+      if (gym.completed) {
+        gymTally.completed += 1;
+      } else {
+        gymTally.incomplete += 1;
+      }
+    }
+    
+    console.log(gymTally);
+  }
+
+console.log(gymStatus);
+
 
 /*
 Exercise 14
@@ -225,6 +243,12 @@ This method should:
 Solve Exercise 14 here:
 */
 
+function partyCount() {
+  return this.party.length;
+}
+
+const numberOfPokemon = game.partyCount();
+console.log(numberOfPokemon);
 
 /*
 Exercise 15
